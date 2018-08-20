@@ -1,0 +1,12 @@
+// my custom.css
+
+@import "variables";
+@import "../../assets/bootstrap/scss/bootstrap";
+@import "sidebar";
+
+html,body {
+    height:100%;
+}
+.main {
+    height:100%;
+}  
