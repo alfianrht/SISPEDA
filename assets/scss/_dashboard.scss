@@ -1,0 +1,30 @@
+// admin
+
+.board-list {
+
+    div {
+
+        a {
+            text-decoration: none;
+            color: gray("500");
+            transition: 0.3s;
+
+            &:hover {
+                box-shadow: $box-shadow-lg !important;
+            }
+
+            div {
+                
+                h3 {
+                    font-weight: 500;
+                    color: $blue-dark;
+                }
+
+                img {
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+        }
+    }
+}
