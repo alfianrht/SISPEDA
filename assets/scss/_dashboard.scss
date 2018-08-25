@@ -1,5 +1,17 @@
 // admin
 
+.tittle-btn {
+
+    padding: 24px 24px 0px 24px;
+    
+    h4 {
+
+        color: $blue-dark;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
 .board-list {
 
     div {
@@ -27,4 +39,40 @@
             }
         }
     }
+}
+
+.post-list {
+
+    h6 {
+        color: gray("600");
+    }
+
+    .post {
+        position: relative;
+
+        h6 {
+            color: $blue-dark;
+        }
+
+        button {
+            position: absolute;
+            right: 24px;
+            bottom: 24px;
+        }
+
+        p {
+            color: gray("600");
+
+            em {
+                font-weight: 200;
+                font-size: 14px;
+                color: gray("600");
+            }
+        }
+    }
+}
+
+.form-list {
+    margin: 24px;
+    padding: 24px;
 }

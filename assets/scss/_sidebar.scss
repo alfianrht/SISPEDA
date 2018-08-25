@@ -1,0 +1,89 @@
+.sidebar {
+
+    min-width: 250px;
+    z-index:100;
+
+    div {
+
+        div {
+            position: relative;
+            padding: 16px 32px;
+            border-bottom: 0.5px solid rgba(229, 229, 229, 0.575);
+            text-decoration: none;
+            transition: 0.3s;
+
+            span {
+                height: 44px;
+                width: 4px;
+                background-color: #005A9C;
+                position: absolute;
+                left: 0px;
+                border-radius: 0px 4px 4px 0px;
+            }
+
+            img {
+                height: 32px;
+                width: auto;
+                margin-right: 12px;
+            }
+
+            p {
+                margin: 0;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                font-size: 18px;
+                letter-spacing: 0.02em;
+
+                color: #005A9C;
+
+            }
+            .btn-side{
+                padding: 0px 10px 3px 10px;
+                color: orange;
+                font-size: 22px;
+                font-weight: bold;
+                text-decoration: none;
+                transition: 0.3s;
+                box-shadow: $box-shadow-sm !important;
+
+                &:hover {
+                    background-color: white;
+                    box-shadow: $box-shadow-lg !important;
+                }
+            }
+
+            &:hover {
+                background-color: #F8F9FE;
+                cursor: pointer;
+            }
+
+            &:first-child {
+                padding: 48px 32px;
+                cursor: context-menu;
+
+                &:hover {
+                    background-color: $white;
+                } 
+
+                img {
+                    height: 48px;
+                    width: 48px;
+                    margin-right: 14px;
+                }
+
+                p {
+                    margin: 0;
+                    font-style: normal;
+                    font-weight: bold;
+                    line-height: normal;
+                    font-size: 24px;
+                    letter-spacing: 0.05em;
+    
+                    color: #005A9C;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
