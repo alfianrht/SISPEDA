@@ -86,4 +86,39 @@
             }
         }
     }
+
+    &[name="user"] {
+
+        min-width: auto;
+        div {
+            
+            div {
+                padding: 24px 24px;
+    
+                span {
+                    width: 60%;
+                    height: 6px;
+                    background-color: #005A9C;
+                    position: absolute;
+                    left: auto;
+                    right: auto;
+                    bottom: 0px;
+                    border-radius:  4px 4px 0px 0px ;
+                }
+                
+                img {
+                    margin: 0px 0px 12px 0px;
+    
+                }
+
+                &:first-child {
+
+                    img {
+                        margin: 12px 0px;
+                    }
+                }
+            }
+        } 
+
+    }
 }

@@ -19,12 +19,19 @@
             }
         }
         
-        tbody > tr > td{
+        tbody > tr {
+
+            td{
     
+                // &:last-child {
+                //     background-color: transparent;
+                // }
+                
             // padding: 24px;
             background-color: white;
             // margin: 24px 12px;
             border-radius: 4px;
+            }
         }
         
         th {
@@ -34,4 +41,8 @@
             border: 0.5px solid rgba(229, 229, 229, 0.575);
         }
     }
+}
+
+.material-icons {
+    line-height: 1.5;
 }

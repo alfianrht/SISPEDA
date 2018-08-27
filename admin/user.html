@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>User | Admin</title>
     <link rel="stylesheet" href="../assets/bootstrap/scss/bootstrap.css">
-    <link rel="stylesheet" href="../assets/css/custom.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/custom.css">
 
 </head>
 <body>
-    <div class="main">
+    <div class="main" style="background-color : #F8F9FE;">
         <div class="container-fluid p-0">
             <div class="d-flex flex-row">
                 <div class="sidebar shadow bg-white h-100 position-fixed">
@@ -57,40 +58,53 @@
                         <span class="navbar-brand ml-auto"></span>
                     </nav>
                     <div class="d-flex flex-row tittle-btn align-items-center">
-                        <h4>Add User</h4>
+                        <h4>User</h4>
+                        <button class="btn btn-secondary rounded ml-auto">+ Add User</button>
                     </div>
-                    <div class="form-list bg-white rounded shadow-lg">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">Example select</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect2">Example multiple select</label>
-                                <select multiple class="form-control" id="exampleFormControlSelect2">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
+                    <div class="container-fluid px-4 table-list">
+                        <div class="table-responsive">
+                            <table id="example" class="table" cellspacing="10">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nama</th>
+                                        <th>Username</th>
+                                        <th>Role</th>
+                                        <th>NIP</th>
+                                        <th>Email</th>
+                                        <th>Telfon</th>
+                                        <th>Tindakan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Alfian Rahmatullah</td>
+                                        <td>Alfian</td>
+                                        <td>Ketua Dept Negara</td>
+                                        <td>0110215066</td>
+                                        <td>alvianrht@gmail.com</td>
+                                        <td>085606442737</td>
+                                        <td class="h-100">
+                                            <div class="btn-group btn-group-sm mx-auto h-100" role="group" aria-label="Basic example">
+                                                 <a href="#detele" class="btn btn-danger"><i  class="material-icons">delete</i></a>   
+                                                 <a href="#edit" class="btn btn-warning"><i  class="material-icons">edit</i></a>   
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

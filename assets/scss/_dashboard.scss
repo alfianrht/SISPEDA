@@ -1,15 +1,22 @@
 // admin
+.title-dash {
+    margin: 24px 24px 0px 24px;
+    color: $blue-dark;
+    font-weight: bold;
+}
 
 .tittle-btn {
+    padding: 24px;
 
-    padding: 24px 24px 0px 24px;
-    
     h4 {
-
         color: $blue-dark;
-        font-weight: bold;
-        margin: 0;
     }
+
+    p {
+        margin-left: 24px;
+        color: gray("500");
+    }
+    
 }
 
 .board-list {
@@ -73,6 +80,6 @@
 }
 
 .form-list {
-    margin: 24px;
+    margin: 0px 24px;
     padding: 24px;
 }
