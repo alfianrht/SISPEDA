@@ -7,8 +7,10 @@
     <title>User | Admin</title>
     <link rel="stylesheet" href="../assets/bootstrap/scss/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
 </head>
@@ -18,9 +20,10 @@
             <div class="d-flex flex-row">
                 <div class="sidebar shadow bg-white h-100 position-fixed">
                     <div class="d-flex flex-column">
-                        <div class="w-100 d-flex align-items-center" onclick="window.open('index.html','_self');">
-                            <img src="../assets/img/brand-icon-plc.png" alt="Brand Icon" >
+                        <div class="w-100 d-flex align-items-center">
+                            <img src="../assets/img/brand-icon-plc.png" alt="Brand Icon"  onclick="window.open('index.html','_self');">
                             <p>SISPEDA</p>
+                            <i class="material-icons closenav">close</i>
                         </div>
                         <div href="#lll" class="d-flex align-items-center" onclick="window.open('index.html','_self');">
                             <img src="../assets/img/icon-plc.svg" alt="Side Img">
@@ -52,9 +55,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md p-0 " style="background-color : #F8F9FE; margin-left: 250px;">
+                <div class="col-12 col-md p-0 content">
                     <nav class="navbar navbar-light bg-light shadow-sm m-0 bg-white py-3 navbar-admin">
-                        <span class="navbar-brand ml-auto"></span>
+                        <i class="material-icons navshow" id="#navshow">menu</i>
+                        <span class="navbar-brand ml-auto "></span>
                     </nav>
                     <div class="d-flex flex-row tittle-btn align-items-center">
                         <h4>Add Berita</h4>
@@ -106,5 +110,6 @@
         $('#example').DataTable();
         } );    
     </script>
+    <script src="../assets/js/index.js"></script>
 </body>
 </html>

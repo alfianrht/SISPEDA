@@ -7,16 +7,21 @@
     <title>Home | Admin</title>
     <link rel="stylesheet" href="../assets/bootstrap/scss/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </head>
 <body>
     <div class="main">
         <div class="container-fluid p-0">
             <div class="d-flex flex-row">
-                <div class="sidebar shadow bg-white h-100 position-fixed">
+                <div class="sidebar shadow bg-white h-100 position-fixed" id="sidebar">
                     <div class="d-flex flex-column">
-                        <div class="w-100 d-flex align-items-center" onclick="window.open('index.html','_self');">
-                            <img src="../assets/img/brand-icon-plc.png" alt="Brand Icon" >
+                        <div class="w-100 d-flex align-items-center">
+                            <img src="../assets/img/brand-icon-plc.png" alt="Brand Icon"  onclick="window.open('index.html','_self');">
                             <p>SISPEDA</p>
+                            <i class="material-icons closenav">close</i>
                         </div>
                         <div href="#lll" class="d-flex align-items-center" onclick="window.open('index.html','_self');">
                             <img src="../assets/img/icon-plc.svg" alt="Side Img">
@@ -48,9 +53,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md p-0 " style="background-color : #F8F9FE; margin-left: 250px;">
+                <div class="col-12 col-md p-0 content" style="background-color : #F8F9FE;">
                     <nav class="navbar navbar-light bg-light shadow-sm m-0 bg-white py-3 navbar-admin">
-                        <span class="navbar-brand ml-auto"></span>
+                        <i class="material-icons navshow" id="#navshow">menu</i>
+                        <span class="navbar-brand ml-auto "></span>
                     </nav>
                     <div class="container-fluid p-0 board-list">
                         <div class="d-flex flex-row justify-content-center p-4">
@@ -84,19 +90,7 @@
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                 <h6 class="mt-4">Banjir Bandang</h6>
                                 <p class=""><em>Posted pada 2018-03-22 | by Admin</em></p>
-                                <button class="btn btn-sm px-4">Edit</button>
-                            </div>
-                            <div class="post p-4 shadow mt-4 bg-white rounded">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <h6 class="mt-4">Banjir Bandang</h6>
-                                <p class=""><em>Posted pada 2018-03-22 | by Admin</em></p>
-                                <button class="btn btn-sm px-4">Edit</button>
-                            </div>  
-                            <div class="post p-4 shadow mt-4 bg-white rounded">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <h6 class="mt-4">Banjir Bandang</h6>
-                                <p class=""><em>Posted pada 2018-03-22 | by Admin</em></p>
-                                <button class="btn btn-sm px-4">Edit</button>
+                                <a class="btn btn-sm btn-secondary px-4">Edit</a>
                             </div>
                         </div>
                     </div>
@@ -109,5 +103,6 @@
             </div>
         </div>
     </div>
+    <script src="../assets/js/index.js"></script>
 </body>
 </html>

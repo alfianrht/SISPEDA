@@ -50,6 +50,8 @@
 
 .post-list {
 
+    margin-bottom: 80px;
+
     h6 {
         color: gray("600");
     }
@@ -61,14 +63,16 @@
             color: $blue-dark;
         }
 
-        button {
+        a {
             position: absolute;
             right: 24px;
             bottom: 24px;
+            color: #FFF;
         }
 
         p {
             color: gray("600");
+            margin: 0px;
 
             em {
                 font-weight: 200;
@@ -82,4 +86,5 @@
 .form-list {
     margin: 0px 24px;
     padding: 24px;
+    margin-bottom: 80px;
 }

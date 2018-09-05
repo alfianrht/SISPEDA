@@ -1,5 +1,6 @@
 .sidebar {
 
+    visibility: visible;
     min-width: 250px;
     z-index:100;
 
@@ -59,6 +60,7 @@
             }
 
             &:first-child {
+                position: relative;
                 padding: 48px 32px;
                 cursor: context-menu;
 
@@ -120,5 +122,82 @@
             }
         } 
 
+    }
+}
+
+.content {
+    margin-left: 250px;
+}
+
+.closenav {
+    visibility: hidden;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 5px;
+    background-color: rgba(229, 229, 229, 0.575);
+}
+
+.navshow {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .closenav {
+        visibility: visible;
+    }
+    
+    .navshow {
+        visibility: visible;
+    }
+
+    .closenav, .navshow {
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .content {
+        margin-left: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .sidebar {
+        min-width: 100%;
+    }
+
+    .board-list > div {
+        flex-direction: column !important;
+
+        a {    
+            margin-bottom: 24px !important;
+            
+            &:last-child {
+                margin-bottom: 0px !important;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .post {
+        a {
+            position: relative !important;
+            right: 0px !important;
+            bottom: 0px !important;
+            width: 100%;
+            margin-top: 18px;
+        }
     }
 }
