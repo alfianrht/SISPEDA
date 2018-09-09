@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User | Admin</title>
+    <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../assets/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="container-fluid p-0">
+            <div class="d-flex flex-row">
+                <div class="sidebar shadow bg-white h-100 position-fixed">
+                    <div class="d-flex flex-column">
+                        <div class="w-100 d-flex align-items-center">
+                            <img src="../assets/img/brand-icon-plc.png" alt="Brand Icon"  onclick="window.open('index.html','_self');">
+                            <p>SISPEDA</p>
+                            <i class="material-icons closenav">close</i>
+                        </div>
+                        <div href="#lll" class="d-flex align-items-center" onclick="window.open('index.html','_self');">
+                            <img src="../assets/img/icon-plc.svg" alt="Side Img">
+                            <span></span>
+                            <p class="align-middle">Beranda</p>
+                        </div>
+                        <div class="d-flex align-items-center"  onclick="window.open('user.html','_self');" >
+                            <img src="../assets/img/icon-plc.svg" alt="Side Img">
+                            <p>User</p>
+                            <a href="user-add.html" class="ml-auto rounded btn-side">+</a>
+                        </div>
+                        <div class="d-flex align-items-center" onclick="window.open('berita.html','_self');">
+                            <img src="../assets/img/icon-plc.svg" alt="Side Img">
+                            <p>Berita</p>
+                            <a href="berita-add.html" class="ml-auto rounded btn-side">+</a>
+                        </div>
+                        <div class="d-flex align-items-center" onclick="window.open('magang.html','_self');">
+                            <img src="../assets/img/icon-plc.svg" alt="Side Img">
+                            <p>Magang</p>
+                        </div>
+                        <div class="d-flex align-items-center" onclick="window.open('surat.html','_self');">
+                            <img src="../assets/img/icon-plc.svg" alt="Side Img">
+                            <p>Surat</p>
+                        </div>
+                        <div class="d-flex align-items-center" onclick="window.open('skripsi.html','_self');">
+                            <img src="../assets/img/icon-plc.svg" alt="Side Img">
+                            <p>Skripsi</p>
+                            <a class="ml-auto rounded btn-side">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md p-0 content">
+                    <nav class="navbar navbar-light bg-light shadow-sm m-0 bg-white py-3 navbar-admin">
+                        <i class="material-icons navshow" id="#navshow">menu</i>
+                        <span class="navbar-brand ml-auto "></span>
+                    </nav>
+                    <div class="d-flex flex-row tittle-btn align-items-center justify-content-between pb-0">
+                        <h4>Skripsi</h4>
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-tab-a2" data-toggle="pill" href="#pills-a2" role="tab" aria-controls="pills-a2" aria-selected="true">A2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-tab-a5" data-toggle="pill" href="#pills-a5" role="tab" aria-controls="pills-a5" aria-selected="false">A5</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-tab-a6" data-toggle="pill" href="#pills-a6" role="tab" aria-controls="pills-a6" aria-selected="false">A6</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-tab-a7" data-toggle="pill" href="#pills-a7" role="tab" aria-controls="pills-a7" aria-selected="false">A7</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-tab-a10" data-toggle="pill" href="#pills-a10" role="tab" aria-controls="pills-a10" aria-selected="false">A10</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-tab-a11" data-toggle="pill" href="#pills-a11" role="tab" aria-controls="pills-a11" aria-selected="false">A11</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="pills-taba2">
+                        <div class="tab-pane fade show active" id="pills-a2" role="tabpanel" aria-labelledby="pills-a2">
+                            <div class="container-fluid p-0 board-list">
+                                <div class="d-flex flex-row justify-content-center p-4">
+                                    <div class="w-100 rounded p-4 shadow bg-white">
+                                        <h6 class="mb-4">Waktu Submit A2</h6>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">Start Tanggal</label>
+                                                        <input type="text" class="form-control" id="startTgl" placeholder="Nama" required value="2018-09-01">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">End Tanggal</label>
+                                                        <input type="text" class="form-control" id="endTgl" placeholder="Nama" required value="2018-09-01">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <button id="editTimeA2" class="btn btn-secondary ">Simpan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid px-4 table-list">
+                                <div class="table-responsive">
+                                    <table class="table" id="skripsi1" cellspacing="10">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Nama</th>
+                                                <th>Prodi</th>
+                                                <th>NIP</th>
+                                                <th>Nama Pembimbing</th>
+                                                <th>Judul Skripsi</th>
+                                                <th>Konsentrasi</th>
+                                                <th>Jenis Skripsi</th>
+                                                <th>Pertanyaan Sementara</th>
+                                                <th>Action</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td width="1px" align="center">1</td>
+                                                <td>Alfian</td>
+                                                <td>Mahasiswa Deps Niaga</td>
+                                                <td>201212</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">Bpk Budiman</label>
+                                                        <input type="text" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Nama" required value="Ganti Judul Kamu">
+                                                        <a href="#" class="btn btn-info">Simpan Nama</a>
+                                                    </div>
+                                                </td>
+                                                <td>Ts</td>
+                                                <td>Ts</td>
+                                                <td>Test</td>
+                                                <td>Petatalk kdla kadmvlad kva</td>
+                                                <td width="1px" align="center">
+                                                    <a id="tollll" href="#preview" class="btn" style="font-size: 1em; color: blue;" data-toggle="tooltip" data-placement="bottom" title="Download Doc"><i class="fas fa-file"></i></a>
+                                                </td>
+                                                <td width="1px">
+                                                        <label for="exampleFormControlInput1" class="text-success">Disetujui</label>
+                                                    <a id="tollll" href="#preview" class="btn btn-info">Disetujui</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="1px" align="center">1</td>
+                                                <td>Alfian</td>
+                                                <td>Mahasiswa Deps Niaga</td>
+                                                <td>201212</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">Bpk Budiman</label>
+                                                        <input type="text" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Nama" required value="Ganti Judul Kamu">
+                                                        <a href="#" class="btn btn-info">Simpan Nama</a>
+                                                    </div>
+                                                </td>
+                                                <td>Ts</td>
+                                                <td>Ts</td>
+                                                <td>Test</td>
+                                                <td>Petatalk kdla kadmvlad kva</td>
+                                                <td width="1px" align="center">
+                                                    <a id="tollll" href="#preview" class="btn" style="font-size: 1em; color: blue;" data-toggle="tooltip" data-placement="bottom" title="Download Doc"><i class="fas fa-file"></i></a>
+                                                </td>
+                                                <td width="1px">
+                                                        <label for="exampleFormControlInput1" class="text-danger">Belum Disetujui</label>
+                                                    <a id="tollll" href="#preview" class="btn btn-info">Disetujui</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Nama</th>
+                                                <th>Prodi</th>
+                                                <th>NIP</th>
+                                                <th>Nama Pembimbing</th>
+                                                <th>Judul Skripsi</th>
+                                                <th>Konsentrasi</th>
+                                                <th>Jenis Skripsi</th>
+                                                <th>Pertanyaan Sementara</th>
+                                                <th>Action</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-a5" role="tabpanel" aria-labelledby="pills-a5">
+                            <div class="container-fluid p-0 board-list">
+                                <div class="d-flex flex-row justify-content-center p-4">
+                                    <div class="w-100 rounded p-4 shadow bg-white">
+                                        <h6 class="mb-4">Waktu Submit A5</h6>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">Start Tanggal</label>
+                                                        <input type="text" class="form-control" id="startTgl" placeholder="Nama" required value="2018-09-01">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">End Tanggal</label>
+                                                        <input type="text" class="form-control" id="endTgl" placeholder="Nama" required value="2018-09-01">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <button id="editTimeA2" class="btn btn-secondary ">Simpan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid px-4 table-list">
+                                <div class="table-responsive">
+                                    <table class="table" id="skripsi2" cellspacing="10">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Nama</th>
+                                                <th>NIP</th>
+                                                <th>Tanggal Dibuat</th>
+                                                <th>Tanggal Update</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td width="1px" align="center">1</td>
+                                                <td>Alfian</td>
+                                                <td>201212</td>
+                                                <td>2018-02-24 12:14:04</td>
+                                                <td>2018-02-24 12:14:04</td>
+                                                <td width="1px" align="center">
+                                                    <a id="tollll" href="#preview" class="btn" style="font-size: 1em; color: blue;" data-toggle="tooltip" data-placement="bottom" title="Download Doc"><i class="fas fa-file"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Nama</th>
+                                                <th>NIP</th>
+                                                <th>Tanggal Dibuat</th>
+                                                <th>Tanggal Update</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-a6" role="tabpanel" aria-labelledby="pills-a6">
+                            <div class="container-fluid p-0 board-list">
+                                <div class="d-flex flex-row justify-content-center p-4">
+                                    <div class="w-100 rounded p-4 shadow bg-white">
+                                        <h6 class="mb-4">Waktu Submit A6</h6>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">Start Tanggal</label>
+                                                        <input type="text" class="form-control" id="startTgl" placeholder="Nama" required value="2018-09-01">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">End Tanggal</label>
+                                                        <input type="text" class="form-control" id="endTgl" placeholder="Nama" required value="2018-09-01">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <button id="editTimeA2" class="btn btn-secondary ">Simpan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid px-4 table-list">
+                                <div class="table-responsive">
+                                    <table class="table" id="skripsi3" cellspacing="10">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Nama</th>
+                                                <th>NIP</th>
+                                                <th>Perbaikan</th>
+                                                <th>Tanggal Sidang</th>
+                                                <th>Penguji</th>
+                                                <th>Ketua Sidang</th>
+                                                <th>Tanggal Dibuat</th>
+                                                <th>Tanggal Update</th>
+                                                <th>Action</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td width="1px" align="center">1</td>
+                                                <td>Alfian</td>
+                                                <td>Mahasiswa Deps Niaga</td>
+                                                <td>201212</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">Bpk Budiman</label>
+                                                        <input type="text" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Nama" required value="Ganti Judul Kamu">
+                                                        <a href="#" class="btn btn-info">Simpan Nama</a>
+                                                    </div>
+                                                </td>
+                                                <td>Ts</td>
+                                                <td>Ts</td>
+                                                <td>Test</td>
+                                                <td>Petatalk kdla kadmvlad kva</td>
+                                                <td width="1px" align="center">
+                                                    <a id="tollll" href="#preview" class="btn" style="font-size: 1em; color: blue;" data-toggle="tooltip" data-placement="bottom" title="Download Doc"><i class="fas fa-file"></i></a>
+                                                </td>
+                                                <td width="1px">
+                                                        <label for="exampleFormControlInput1" class="text-success">Disetujui</label>
+                                                    <a id="tollll" href="#preview" class="btn btn-info">Disetujui</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Nama</th>
+                                                <th>Prodi</th>
+                                                <th>NIP</th>
+                                                <th>Nama Pembimbing</th>
+                                                <th>Judul Skripsi</th>
+                                                <th>Konsentrasi</th>
+                                                <th>Jenis Skripsi</th>
+                                                <th>Pertanyaan Sementara</th>
+                                                <th>Action</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-a7" role="tabpanel" aria-labelledby="pills-a7">
+                            <div class="container-fluid p-0 board-list">
+                                <div class="d-flex flex-row justify-content-center p-4">
+                                    <div class="w-100 rounded p-4 shadow bg-white">
+                                        <h6 class="mb-4">Waktu Submit A6</h6>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">Start Tanggal</label>
+                                                        <input type="text" class="form-control" id="startTgl" placeholder="Nama" required value="2018-09-01">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">End Tanggal</label>
+                                                        <input type="text" class="form-control" id="endTgl" placeholder="Nama" required value="2018-09-01">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <button id="editTimeA2" class="btn btn-secondary ">Simpan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid px-4 table-list">
+                                <div class="table-responsive">
+                                    <table class="table" id="skripsi3" cellspacing="10">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Nama</th>
+                                                <th>Prodi</th>
+                                                <th>NIP</th>
+                                                <th>Nama Pembimbing</th>
+                                                <th>Judul Skripsi</th>
+                                                <th>Konsentrasi</th>
+                                                <th>Jenis Skripsi</th>
+                                                <th>Pertanyaan Sementara</th>
+                                                <th>Action</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td width="1px" align="center">1</td>
+                                                <td>Alfian</td>
+                                                <td>Mahasiswa Deps Niaga</td>
+                                                <td>201212</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">Bpk Budiman</label>
+                                                        <input type="text" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Nama" required value="Ganti Judul Kamu">
+                                                        <a href="#" class="btn btn-info">Simpan Nama</a>
+                                                    </div>
+                                                </td>
+                                                <td>Ts</td>
+                                                <td>Ts</td>
+                                                <td>Test</td>
+                                                <td>Petatalk kdla kadmvlad kva</td>
+                                                <td width="1px" align="center">
+                                                    <a id="tollll" href="#preview" class="btn" style="font-size: 1em; color: blue;" data-toggle="tooltip" data-placement="bottom" title="Download Doc"><i class="fas fa-file"></i></a>
+                                                </td>
+                                                <td width="1px">
+                                                        <label for="exampleFormControlInput1" class="text-success">Disetujui</label>
+                                                    <a id="tollll" href="#preview" class="btn btn-info">Disetujui</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Nama</th>
+                                                <th>Prodi</th>
+                                                <th>NIP</th>
+                                                <th>Nama Pembimbing</th>
+                                                <th>Judul Skripsi</th>
+                                                <th>Konsentrasi</th>
+                                                <th>Jenis Skripsi</th>
+                                                <th>Pertanyaan Sementara</th>
+                                                <th>Action</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid footer bg-white py-3 fixed-bottom">
+                        <div class="d-flex align-content-center justify-content-end mr-3">
+                            <p>Copyright by <a href="#">Alfianrht</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#skripsi1').DataTable();
+        } ); 
+        $(document).ready(function() {
+            $('#skripsi2').DataTable();
+        } ); 
+        $(document).ready(function() {
+            $('#skripsi3').DataTable();
+        } );    
+
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
+    <script src="../assets/js/index.js"></script>
+</body>
+</html>

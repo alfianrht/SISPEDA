@@ -7,11 +7,14 @@
     <title>User | Admin</title>
     <link rel="stylesheet" href="../assets/bootstrap/scss/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <!-- For Text Area Plugin -->
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
 
 </head>
 <body>
@@ -66,27 +69,29 @@
                     <div class="form-list bg-white rounded shadow-lg">
                         <form>
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                                <label for="exampleFormControlInput1">Judul Berita *</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama" required>
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1">Example select</label>
+                                <label for="exampleFormControlSelect1">Pilih Departemen *</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                                    <option>Dept Niaga</option>
+                                    <option>Dept Negara</option>
+                                    <option>Dept Fiskal</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlSelect2">Example multiple select</label>
-                                <select multiple class="form-control" id="exampleFormControlSelect2">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                                <label for="exampleFormControlSelect1">Jenis Berita *</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Magang</option>
+                                    <option>Skripsi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Status Berita *</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Tampilkan</option>
+                                    <option>Sembunyikan</option>
                                 </select>
                             </div>
                             <div class="form-group">

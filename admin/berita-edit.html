@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Magang | Admin</title>
+    <title>Edit Berita | Admin</title>
     <link rel="stylesheet" href="../assets/bootstrap/scss/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -61,54 +61,38 @@
                         <span class="navbar-brand ml-auto "></span>
                     </nav>
                     <div class="d-flex flex-row tittle-btn align-items-center">
-                        <h4>Magang</h4>
-                        <button class="btn btn-info rounded ml-auto">Download Exel</button>
+                        <h4>Edit Berita</h4>
                     </div>
-                    <div class="container-fluid px-4 table-list">
-                        <div class="table-responsive">
-                            <table id="example" class="table" cellspacing="10">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Nama</th>
-                                        <th>Username</th>
-                                        <th>Role</th>
-                                        <th>NIP</th>
-                                        <th>Email</th>
-                                        <th>Telfon</th>
-                                        <!-- <th>Tindakan</th> -->
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td width="1px">1</td>
-                                        <td>Alfian Rahmatullah</td>
-                                        <td>Alfian</td>
-                                        <td>Ketua Dept Negara</td>
-                                        <td>0110215066</td>
-                                        <td>alvianrht@gmail.com</td>
-                                        <td>085606442737</td>
-                                        <!-- <td class="h-100" width="1px">
-                                            <div class="btn-group" role="group" aria-label="Basic example">
-                                                <a href="#preview" class="btn" style="font-size: 1em; color: blue;"><i class="fas fa-edit"></i></a>
-                                            </div>
-                                        </td> -->
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Nama</th>
-                                        <th>Username</th>
-                                        <th>Role</th>
-                                        <th>NIP</th>
-                                        <th>Email</th>
-                                        <th>Telfon</th>
-                                        <!-- <th>Salary</th> -->
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
+                    <div class="form-list bg-white rounded shadow-lg">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Judul Berita *</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama" required value="Ganti Judul Kamu">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Pilih Departemen *</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Dept Niaga</option>
+                                    <option>Dept Negara</option>
+                                    <option>Dept Fiskal</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Jenis Berita *</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Magang</option>
+                                    <option>Skripsi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Status Berita *</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Tampilkan</option>
+                                    <option>Sembunyikan</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                     <div class="container-fluid footer bg-white py-3 fixed-bottom">
                         <div class="d-flex align-content-center justify-content-end mr-3">

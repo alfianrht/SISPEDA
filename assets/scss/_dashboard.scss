@@ -23,7 +23,15 @@
 
     div {
 
-        a {
+        div {
+            
+            h6 {
+                color: gray("500");    
+            }
+        }
+
+        a{
+
             text-decoration: none;
             color: gray("500");
             transition: 0.3s;
@@ -87,4 +95,17 @@
     margin: 0px 24px;
     padding: 24px;
     margin-bottom: 80px;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .tittle-btn {
+        flex-direction: column !important;
+        justify-content: center !important;
+        
+        h4 {
+            margin-bottom: 24px;
+        }
+    }
 }
