@@ -97,6 +97,35 @@
     margin-bottom: 80px;
 }
 
+.magang-right {
+
+    div {
+        align-items: center;
+        justify-items: center;
+
+    }
+}
+
+.list-status-sk {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+    span {
+        height: 100%;
+        width: 8px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgb(8, 233, 8);
+        border-radius: 4px 0px 0px  4px ;
+    }
+    p {
+        margin: 0px;
+        
+    }
+}
 
 @media only screen and (max-width: 500px) {
 
