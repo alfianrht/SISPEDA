@@ -6848,19 +6848,12 @@ a.text-dark:hover, a.text-dark:focus {
     min-width: auto; }
     .sidebar[name="user"] div div {
       padding: 24px 24px; }
-      .sidebar[name="user"] div div span {
-        width: 60%;
-        height: 6px;
-        background-color: #005A9C;
-        position: absolute;
-        left: auto;
-        right: auto;
-        bottom: 0px;
-        border-radius: 4px 4px 0px 0px; }
       .sidebar[name="user"] div div img {
         margin: 0px 0px 12px 0px; }
       .sidebar[name="user"] div div:first-child img {
         margin: 12px 0px; }
+  .sidebar .active {
+    background: #F8F9FE !important; }
 
 .content {
   margin-left: 250px; }
@@ -6932,18 +6925,20 @@ a.text-dark:hover, a.text-dark:focus {
     margin-left: 24px;
     color: #adb5bd; }
 
+.board-list div h6 {
+  color: #adb5bd; }
 .board-list div div h6 {
   color: #adb5bd; }
-.board-list div a {
+.board-list div > a {
   text-decoration: none;
   color: #adb5bd;
   transition: 0.3s; }
-  .board-list div a:hover {
+  .board-list div > a:hover {
     box-shadow: 0px 0px 36px rgba(208, 208, 208, 0.3) !important; }
-  .board-list div a div h3 {
+  .board-list div > a div h3 {
     font-weight: 500;
     color: #005A9C; }
-  .board-list div a div img {
+  .board-list div > a div img {
     height: 32px;
     width: 32px; }
 
@@ -6988,12 +6983,12 @@ a.text-dark:hover, a.text-dark:focus {
     top: 0;
     left: 0;
     position: absolute;
-    background-color: #08e908;
+    background-color: #0a960a;
     border-radius: 4px 0px 0px 4px; }
   .list-status-sk p {
     margin: 0px; }
   .list-status-sk > div {
-    color: #08e908; }
+    color: #0a960a; }
 
 @media only screen and (max-width: 500px) {
   .tittle-btn {
@@ -7110,6 +7105,18 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 30mm 45mm 30mm 45mm;
   background: #ffffff; }
 
+@media print {
+  .paper-a4 {
+    display: block; }
+    .paper-a4 img {
+      width: 100%;
+      height: auto;
+      padding: 0px 25px; }
+    .paper-a4 a, .paper-a4 p, .paper-a4 * {
+      font-family: 'Times New Roman', Times, serif !important;
+      font-size: 20px !important; }
+    .paper-a4 > div {
+      padding: 100px; } }
 * {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
@@ -7121,5 +7128,8 @@ body {
 
 .main {
   height: 100%; }
+
+.btn {
+  border-radius: 50px !important; }
 
 /*# sourceMappingURL=custom.css.map */

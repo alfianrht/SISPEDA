@@ -1,0 +1,25 @@
+.paper-a4 {
+    // display: none;
+}
+@media print {
+    
+    .paper-a4 {
+        
+        display: block;
+
+        img {
+            width: 100%;
+            height: auto;
+            padding: 0px 25px;
+        }
+
+        a,p,* {
+            font-family: 'Times New Roman', Times, serif !important;
+            font-size: 20px !important;
+        }
+
+        &> div {
+            padding: 100px;
+        }
+    }
+}
