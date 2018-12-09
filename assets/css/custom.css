@@ -7115,6 +7115,17 @@ a.text-dark:hover, a.text-dark:focus {
   justify-items: center;
   justify-content: center; }
 
+@media only screen and (max-width: 750px) {
+  .login-page {
+    flex-direction: column !important; }
+    .login-page > div:nth-child(1) {
+      order: 2;
+      display: none !important; }
+    .login-page > div:nth-child(2) {
+      order: 1;
+      justify-content: center; }
+      .login-page > div:nth-child(2) > h3 {
+        text-align: center; } }
 .A4 {
   width: 21cm;
   height: 29.7cm;

@@ -4,3 +4,30 @@
     justify-items: center;
     justify-content: center;
 }
+
+
+@media only screen and (max-width: 750px) {
+    
+    .login-page {
+        flex-direction: column !important;
+    
+        &> div {
+    
+            &:nth-child(1) {
+                order: 2;
+                display: none !important;
+            }
+            &:nth-child(2) {
+                order: 1;
+                justify-content: center;
+
+                &> h3 {
+                    text-align: center;
+                }
+            }
+    
+    
+        }
+    }
+
+}
