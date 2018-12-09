@@ -130,6 +130,12 @@
 }
 
 .content {
+
+    &[name="user"] {
+        
+        margin-left: 118px;
+    }
+
     margin-left: 250px;
 }
 
@@ -151,6 +157,12 @@
 
     .sidebar {
         display: none;
+
+        &[name="user"] {
+        
+            width: 50%;
+
+        }
     }
 
     .closenav {
@@ -170,6 +182,11 @@
 
     .content {
         margin-left: 0px;
+
+        &[name="user"] {
+        
+            margin-left: 0px;
+        }
     }
 
 }
@@ -178,6 +195,12 @@
 
     .sidebar {
         min-width: 100%;
+
+        &[name="user"] {
+        
+            width: 100%;
+            
+        }
     }
 
     .board-list > div {

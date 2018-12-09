@@ -1,6 +1,6 @@
 
 $( ".navshow" ).click(function() {
-    $( ".sidebar" ).toggle( "slide" );
+    $( ".sidebar" ).toggle("slide" );
 });
 $( ".closenav" ).click(function() {
     $( ".sidebar" ).toggle("slide");

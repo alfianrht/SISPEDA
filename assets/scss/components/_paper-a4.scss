@@ -22,4 +22,10 @@
             padding: 100px;
         }
     }
+} 
+
+@media print and (max-width: 500px) {
+    a,p,td {
+        font-size: 8px !important;
+    }
 }

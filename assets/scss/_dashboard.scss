@@ -6,6 +6,7 @@
 }
 
 .tittle-btn {
+    justify-content: space-between;
     padding: 24px;
 
     h4 {
@@ -134,14 +135,30 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 750px) {
 
     .tittle-btn {
         flex-direction: column !important;
         justify-content: center !important;
         
         h4 {
-            margin-bottom: 24px;
+            margin: 20px !important;
+        }
+    }
+
+    .board-list {
+        &> div {
+            &> div {
+                &:nth-child(1) {
+                    order: 3;
+                    h6 {
+                        margin-top: 25px;
+                    }
+                }
+                &:nth-child(2) {
+                    order: 2;
+                }
+            }
         }
     }
 }

@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home | Admin</title>
-    <link rel="stylesheet" href="/assets/bootstrap/scss/bootstrap.css">
-    <link rel="stylesheet" href="/assets/css/custom.css">
-    <link rel="stylesheet" href="/assets/scss/custom.css">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../assets/bootstrap/scss/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/custom.css">
+    <link rel="stylesheet" href="../../assets/scss/custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script src="../../assets/js/printThis.js"></script>
 
 </head>
 <body>
@@ -21,53 +26,49 @@
                 <div class="sidebar shadow bg-white h-100 position-fixed" name="user">
                     <div class="d-flex flex-column">
                         <div class="w-100 d-flex flex-column align-items-center">
-                            <img src="/assets/img/brand-icon-plc.png" alt="Brand Icon">
+                            <img src="../../assets/img/brand-icon-plc.png" alt="Brand Icon">
+                            <i class="material-icons closenav">close</i>
                         </div>
-                        <div class="d-flex flex-column align-items-center"  onclick="window.open('/user/magang/magang.html','_self');">
-                            <img src="/assets/img/icon-plc.svg" alt="Side Img">
+                        <div class="d-flex flex-column align-items-center"  onclick="window.open('../magang/magang.html','_self');">
+                            <img src="../../assets/img/icon-plc.svg" alt="Side Img">
                             <p class="align-middle">Magang</p>
                         </div>
-                        <div class="d-flex flex-column align-items-center"  onclick="window.open('/user/surat/sk.html','_self');">
-                            <img src="/assets/img/icon-plc.svg" alt="Side Img">
+                        <div class="d-flex flex-column align-items-center"  onclick="window.open('../surat/sk.html','_self');">
+                            <img src="../../assets/img/icon-plc.svg" alt="Side Img">
                             <p>Surat</p>
                         </div>
-                        <div class="d-flex flex-column align-items-center active"  onclick="window.open('user/skripsi/skripsi.html','_self');">
-                            <img src="/assets/img/icon-plc.svg" alt="Side Img">
+                        <div class="d-flex flex-column align-items-center active"  onclick="window.open('skripsi.html','_self');">
+                            <img src="../../assets/img/icon-plc.svg" alt="Side Img">
                             <p>Skripsi</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md p-0 " style="background-color : #F8F9FE; margin-left: 118px;">
+                <div class="col-12 col-md p-0 content " name="user" style="background-color : #F8F9FE;">
                     <nav class="navbar navbar-light bg-light shadow-sm m-0 bg-white py-3 navbar-admin">
+                        <i class="material-icons navshow" id="#navshow">menu</i>
                         <span class="navbar-brand ml-auto"></span>
                     </nav>
                     <div class="d-flex flex-row pb-0 tittle-btn align-items-center">
                         <h4 class="m-0">Pengajuan Skripsi</h4>
-                        <button class="btn btn-secondary ml-auto" data-toggle="modal" data-target="#exampleModal">+ CETAK</button>
+                        <button class="btn btn-secondary font-weight-bold" data-toggle="modal" data-target="#exampleModal">+ CETAK</button>
                     </div>
                     <div class="container-fluid p-0 board-list">
                         <div class="d-flex flex-row justify-content-center p-4">
                             <div class="w-100 rounded mr-4">
-                                <h6>INFORMASI MAGANG</h6>
+                                <h6>INFORMASI SKRIPSI</h6>
                                 <div class="d-flex flex-column mt-4 p-4 shadow bg-white rounded">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     <h6 class="mt-4">Banjir Bandang</h6>
                                     <p class=""><em>Posted pada 2018-03-22 | by Admin</em></p>
-                                    <a href="magang-detail-post.html" class="btn btn-outline-primary btn-sm ">Lihat Detail</a>
-                                </div>
-                                <div class="d-flex flex-column mt-4 p-4 shadow bg-white rounded">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <h6 class="mt-4">Banjir Bandang</h6>
-                                    <p class=""><em>Posted pada 2018-03-22 | by Admin</em></p>
-                                    <a href="magang-detail-post.html" class="btn btn-outline-primary btn-sm ">Lihat Detail</a>
+                                    <a href="magang-detail-post.html" class="btn btn-outline-light text-primary btn-sm font-weight-bold">Lihat Detail</a>
                                 </div>
                             </div>
                             <div class="w-100 rounded">
                                 <div class="magang-right">
                                     <h6>DATA SKRIPSI</h6>
                                     <div class="d-flex flex-column mt-4 p-5 shadow bg-white rounded">
-                                        <p>Belum ada data magang</p>
-                                        <a href="magang-submit-data.html" class="btn btn-outline-secondary text-secondary">+ SUBMIT DATA</a>
+                                        <p>Belum ada data skripsi</p>
+                                        <a href="skripsi-submit-data.html" class="btn btn-outline-light text-primary font-weight-bold">+ SUBMIT DATA</a>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +91,7 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">A2</a>
                         <a class="dropdown-item" href="#">A5</a>
-                        <a class="dropdown-item" href="#">A6</a>
+                        <a class="dropdown-item button-ajukan-magang" href="#">A6</a>
                         <a class="dropdown-item" href="#">A7</a>
                         <a class="dropdown-item" href="#">A10</a>
                         <a class="dropdown-item" href="#">A11</a>
@@ -188,6 +189,13 @@
         $('#myModal').on('shown.bs.modal', function () {
             $('#myInput').trigger('focus')
         })
+
+        
+        $( ".button-ajukan-magang" ).click(function() {
+            $("#paper-a4").printThis();
+        });
     </script>
+
+    <script src="../../assets/js/index.js"></script>
 </body>
 </html>
